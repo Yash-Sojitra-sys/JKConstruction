@@ -40,7 +40,7 @@ const Header: React.FC<HeaderProps> = ({ isTransparent = false }) => {
     <>
       <header className={`fixed top-0 w-full z-50 ${
         shouldBeTransparent 
-          ? 'bg-white' 
+          ? 'bg-gradient-to-r from-white from-60% to-transparent' 
           : 'bg-white shadow-lg'
       }`}>
         <nav className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
@@ -59,10 +59,16 @@ const Header: React.FC<HeaderProps> = ({ isTransparent = false }) => {
             </Link>
           </div>
           <div className="flex items-center space-x-6">
-            <Search className="w-5 h-5 cursor-pointer text-gray-900" />
+            <Search className={`w-5 h-5 cursor-pointer ${
+              shouldBeTransparent ? 'text-white' : 'text-gray-900'
+            }`} />
             <div className="flex items-center space-x-2 cursor-pointer" onClick={toggleMenu}>
-              <span className="text-sm font-medium text-gray-900">Menu</span>
-              <Menu className="w-5 h-5 text-gray-900" />
+              <span className={`text-sm font-medium ${
+                shouldBeTransparent ? 'text-white' : 'text-gray-900'
+              }`}>Menu</span>
+              <Menu className={`w-5 h-5 ${
+                shouldBeTransparent ? 'text-white' : 'text-gray-900'
+              }`} />
             </div>
           </div>
         </nav>
