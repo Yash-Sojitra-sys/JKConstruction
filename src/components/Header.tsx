@@ -40,7 +40,7 @@ const Header: React.FC<HeaderProps> = ({ isTransparent = false }) => {
     <>
       <header className={`fixed top-0 w-full z-50 ${
         shouldBeTransparent 
-          ? 'bg-gradient-to-r from-white from-60% to-transparent' 
+          ? 'bg-white' 
           : 'bg-white shadow-lg'
       }`}>
         <nav className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
