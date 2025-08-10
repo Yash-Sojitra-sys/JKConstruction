@@ -46,11 +46,11 @@ const Header: React.FC<HeaderProps> = ({ isTransparent = false }) => {
         <nav className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-2">
-              {/* Large logo for main header */}
+              {/* Reduced logo size from h-20 to h-12 */}
               <img 
                 src="https://cdn-thumbs.imagevenue.com/a4/6b/4a/ME1B0ZBL_t.png"
                 alt="JKC Logo"
-                className="h-20 w-auto object-contain"
+                className="h-12 w-auto object-contain"
               />
               
               <span className={`text-2xl font-bold ${
@@ -81,12 +81,12 @@ const Header: React.FC<HeaderProps> = ({ isTransparent = false }) => {
         <div className="p-6 h-full flex flex-col">
           <div className="flex justify-between items-center mb-8 pb-6 border-b border-gray-200">
             <Link to="/" className="flex items-center">
-              {/* Logo only - no text */}
+              {/* Reduced logo size from h-12 to h-8 */}
               <div className="bg-white p-2 rounded-lg shadow-sm border border-gray-100">
                 <img 
                   src="https://cdn-thumbs.imagevenue.com/a4/6b/4a/ME1B0ZBL_t.png"
                   alt="JKC Logo"
-                  className="h-12 w-auto object-contain"
+                  className="h-8 w-auto object-contain"
                 />
               </div>
             </Link>
